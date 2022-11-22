@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required bootstrap meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+            <!-- Normal meta tags -->
+        <meta name="Final Project" content="Final Project, Sam Nordhus, Nordhus, Samuel Nordhus, snordhus">
+    
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Final Project: Yahoo Finance API</title>
+    </head>
+    <body>
+        <h1>Yahoo Finance API</h1>
+        <p id="info">Retrieves current stock market data. Use during U.S. trading hours (8:30am - 3:00pm CST, Mon-Fri) for real-time updates, but it will fetch most-recent data at any time.</p>
+        <div class="container">
+            
+            <!-- ticker input form -->
+            <h4 id="inputHeader">Input Stock Ticker Here:</h4>
+            <form id="add-form">
+                <div class="form-group">
+                    <label for="todo-name">Name of Ticker: (ex: "MSFT", "AAPL")</label>
+                    <input type="text" class="form-control" id="todo-name" placeholder="type here..." required>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Go</button>
+            </form>
+
+            <!-- interactive element #1 of 2: stock variables selector -->
+            <!-- press go after selecting the desired variables -->
+            <h5>Select Data to Retrieve:</h5>
+            <div class="row">
+                <div class="col-2">
+                    <input type="checkbox" id="nameCheck" class="checkbox" name="checkbox" checked/> Company Name
+                </div>
+                <div class="col-2">
+                    <input type="checkbox" id="exCheck" class="checkbox" name="checkbox" checked/> Exchange Name
+                </div>
+                <div class="col-2">
+                    <input type="checkbox" id="askCheck" class="checkbox" name="checkbox" checked/> Ask Price
+                </div> 
+                <div class="col-2">
+                    <input type="checkbox" id="bidCheck" class="checkbox" name="checkbox" checked/> Bid Price
+                </div> 
+                <div class="col-2">
+                    <input type="checkbox" id="PECheck" class="checkbox" name="checkbox" checked/> P/E Ratio
+                </div> 
+                <div class="col-2">
+                    <input type="checkbox" id="ratCheck" class="checkbox" name="checkbox" checked/> Analyst Rating
+                </div>       
+            </div>       
+            <h4 id="resultsHeader">Results:</h4>
+            <div id="result">
+                <!-- API response parsed into here -->
+            </div>
+
+            <!-- informative section -->
+            <div class=row id="defsContainer">
+                <div class="col-md-12 col-lg-9">
+                    <h4>Key Definitions:</h4>
+                    <div id="defs">
+                        <h5>Stock (Equity):</h5>
+                        <p>A security that represents the ownership of a fraction of a corporation. This entitles the owner of the stock to a proportion of the corporation's assets and profits equal to how much stock they own. Units of stock are called "shares." (<a href="https://www.investopedia.com/terms/s/stock.asp">Investopedia</a>).</p>
+                        <h5>Ticker Symbol:</h5>
+                        <p>An abbreviation used to uniquely identify publicly traded shares of a particular stock on a particular stock market (<a href="https://www.investopedia.com/terms/s/stocksymbol.asp">Investopedia</a>).</p>
+                        <h5>Ask Price:</h5>
+                        <p>The minimum price that a seller is willing to take for a security (<a href="https://www.investopedia.com/terms/b/bid-and-ask.asp#:~:text=The%20ask%20price%20represents%20the,sell%20at%20the%20highest%20bid.">Investopedia</a>).</p>
+                        <h5>Bid Price:</h5>
+                        <p>The maximum price that a buyer is willing to pay for a security (<a href="https://www.investopedia.com/terms/b/bid-and-ask.asp#:~:text=The%20ask%20price%20represents%20the,sell%20at%20the%20highest%20bid.">Investopedia</a>).</p>  
+                        <h5>Stock Exchange:</h5>
+                        <p>A market where stock buyers connect with stock sellers. Stocks can be traded on several exchanges such as the New York Stock Exchange (NYSE) or the Nasdaq (<a href="https://www.investopedia.com/articles/basics/04/092404.asp">Investopedia</a>).</p>  
+                        <h5>Trailing price-to-earnings (P/E) ratio:</h5>
+                        <p>A relative valuation multiple that is based on the last 12 months of actual earnings. It is calculated by taking the current stock price and dividing it by the trailing earnings per share (EPS) for the past 12 months (<a href="https://www.investopedia.com/terms/t/trailingpe.asp#:~:text=Trailing%20price%2Dto%2Dearnings%20(P%2FE)%20is,for%20the%20past%2012%20months.">Investopedia</a>).</p>  
+                      
+                    </div>
+                </div>
+                <div class="col-md-0 col-lg-3">
+                    <img src="wallstreet.gif" alt="aesthetic_gif" class="image">
+                    <img src="nyse.jpg" alt="nyseBuilding" class="image">
+                </div>
+            </div>
+            <div class="sourcesCont">
+                <h4>Image Sources:
+                <p class="sources">
+                    <a href="https://en.wikipedia.org/wiki/New_York_Stock_Exchange">NYSE Building</a>
+                    <br><a href="https://www.reddit.com/r/wallstreetbets/">r/wallstreetbets meme</a>
+                </p>
+            </div>    
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

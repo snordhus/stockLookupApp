@@ -1,0 +1,145 @@
+@media (max-width: 992px) {
+    .image{
+        visibility: hidden;
+        position: absolute;
+    }
+    #defs{
+        margin-right: 2rem;
+    }
+}
+h1{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#info{
+    margin-left: 3rem;
+    font-size: large;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+#add-form{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: outset;
+    padding: 2rem 3rem;
+    background-color: rgb(232, 245, 255);
+    margin-bottom: 1.5rem;
+}
+.btn {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #38b0e7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn:hover {background-color: #4983b3}
+  
+  .btn:active {
+    background-color: #4983b3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+#result{
+    width:100%;
+    background-color: rgb(128, 216, 93);
+    height : auto;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-left: 3rem;
+    border-radius: 5rem;
+    font-size: 120%;
+}
+#defs{
+    margin-left:2rem;
+}
+#defs > p{
+    margin-left:2rem;
+}
+.item{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+#resultsHeader{
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-bottom-width: 0px;
+    border-top-width: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(87, 125, 250), rgb(15, 206, 40)) 1;
+}
+#inputHeader{
+    padding-top: 1rem;
+    border-bottom-width: 0px;
+    border-top-width: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(15, 206, 40), rgb(87, 125, 250)) 1;
+}
+.image{
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.deleteButton{
+    background-color: red;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(138, 138, 138);
+}
+.deleteButton:hover {
+    background-color: rgb(141, 17, 17)
+}
+.deleteButton:active {
+    background-color: rgb(141, 17, 17);
+    box-shadow: 0 3px rgb(66, 66, 66);
+    transform: translateY(4px);
+}
+#defsContainer{
+    background-image: url('moneyBknd.jpg');
+    background-size: 20rem 20rem;
+    border: 3px solid rgb(0, 63, 8);
+    margin-bottom: 2rem;
+    width:100%
+}
+#defsContainer h4{
+    background-color: rgba(255, 255, 255, 0.781);
+    width: fit-content;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    margin-top: .5rem;
+}
+#defs{
+    background-color: rgba(255, 255, 255, 0.781);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+
+}
+.sources{
+    font-size: medium;
+    margin-left: 2rem;
+    margin-top: .5rem;
+}
