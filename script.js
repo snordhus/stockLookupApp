@@ -85,7 +85,7 @@ function getData(ticker) {
         }
     };
     xhttp.open("GET", "https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols="+ticker, true);
-    xhttp.setRequestHeader("x-api-key","sKZ5yh7hpL4dJSqWBFwed72iNPmDOTjM8OqgL8qT");
+    xhttp.setRequestHeader("x-api-key","kbsAyPADLM3M5TOa8TJRu4OuVAncE5f75P2yYiiE");
     xhttp.send();
   }
 
